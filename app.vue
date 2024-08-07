@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-black">
-    Hello world
-  </div>
+  <NuxtLayout>
+    <slot>
+      <NuxtPage />
+    </slot>
+  </NuxtLayout>
 </template>

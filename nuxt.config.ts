@@ -21,6 +21,7 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.css',
   ],
+  modules: ['@nuxtjs/google-fonts', '@nuxt/icon'],
 
   postcss: {
     plugins: {
@@ -31,6 +32,12 @@ export default defineNuxtConfig({
 
   imports: {
     autoImport: false,
+  },
+
+  googleFonts: {
+    families: {
+      Roboto: [400],
+    },
   },
 
   compatibilityDate: '2024-08-07',
