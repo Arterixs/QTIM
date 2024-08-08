@@ -27,13 +27,13 @@ const { data, error, status } = getPost(postId);
       class="w-full flex flex-col gap-y-[73px]"
     >
       <Loader v-if="status === 'pending'" />
-      <temlate v-else>
+      <template v-else>
         <Subtitle :title="data?.title" />
         <Post
           :image="data?.image"
           :description="data?.description"
         />
-      </temlate>
+      </template>
     </section>
   </WrapperMain>
 </template>

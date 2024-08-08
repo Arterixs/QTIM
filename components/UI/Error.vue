@@ -3,7 +3,7 @@
     <div class="size-40 md:size-96 bg-pink-qtim rounded-full mx-auto flex justify-center items-center">
       <img
         src="/assets/webp/balloon.webp"
-        alt=""
+        alt="balloon"
         width="300"
         height="300"
       >
