@@ -1,3 +1,5 @@
+@import './variables.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +10,7 @@ html {
 
 body {
   height: 100%;
-  background: white;
+  background: var(--white);
   font-family: Roboto, 'sans-serif';
 }
 
@@ -32,10 +34,10 @@ body {
 .slide-fade-enter-from,
 .slide-fade-leave-to {
   transform: translateY(-500px);
-  box-shadow: 0 100px 20px 1000px rgba(0, 0, 0, 0);
+  box-shadow: 0 100px 20px 1000px var(--black);
 }
 
 .slide-fade-enter-to,
 .slide-fade-leave-from {
-  box-shadow: 0 100px 20px 1000px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 100px 20px 1000px var(--black);
 }

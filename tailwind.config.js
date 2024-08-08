@@ -14,26 +14,27 @@ export default {
         mlg: '1440px',
       },
       colors: {
+        white: 'var(--white)',
         black: {
-          qtim: '#101010',
-          'qtim-light': '#232323',
+          qtim: 'var(--black)',
+          'qtim-light': 'var(--black-light)',
         },
         gray: {
-          qtim: '#868686',
-          'qtim-hover': '#E8E8E8',
-          'qtim-light': '#F3F3F3',
+          qtim: 'var(--gray)',
+          'qtim-hover': 'var(--gray-hover)',
+          'qtim-light': 'var(--gray-light)',
         },
         green: {
-          'qtim-light': '#9EFFBF',
+          'qtim-light': 'var(--green-light)',
         },
         purple: {
-          qtim: '#7941A7',
+          qtim: 'var(--purple)',
         },
         pink: {
-          qtim: '#E2BEFF',
+          qtim: 'var(--pink)',
         },
         blue: {
-          qtim: '#1059C8',
+          qtim: 'var(--blue)',
         },
       },
       fontFamily: {

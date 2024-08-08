@@ -41,9 +41,9 @@
     aspect-ratio: 1;
     border-radius: 50%;
     border: 10px solid transparent;
-    border-top: 10px solid #5e96fc;
-    border-left: 10px solid #5e96fc;
-    border-bottom: 10px solid #5e96fc;
+    border-top: 10px solid var(--blue);
+    border-left: 10px solid var(--blue);
+    border-bottom: 10px solid var(--blue);
     -webkit-animation: rotating 2s linear infinite;
     -moz-animation: rotating 2s linear infinite;
     -ms-animation: rotating 2s linear infinite;
@@ -64,9 +64,9 @@
       width: 44px;
       height: 44px;
       border: 7px solid transparent;
-      border-top: 7px solid #5e96fc;
-      border-left: 7px solid #5e96fc;
-      border-bottom: 7px solid #5e96fc;
+      border-top: 7px solid var(--blue);
+      border-left: 7px solid var(--blue);
+      border-bottom: 7px solid var(--blue);
     }
   }
 
@@ -75,9 +75,9 @@
       width: 22px;
       height: 22px;
       border: 3px solid transparent;
-      border-top: 3px solid #5e96fc;
-      border-left: 3px solid #5e96fc;
-      border-bottom: 3px solid #5e96fc;
+      border-top: 3px solid var(--blue);
+      border-left: 3px solid var(--blue);
+      border-bottom: 3px solid var(--blue);
     }
   }
 </style>
