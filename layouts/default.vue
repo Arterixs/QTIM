@@ -6,9 +6,9 @@ import BaseHeader from '~/components/header/BaseHeader.vue';
 <template>
   <div class="h-full flex flex-col">
     <BaseHeader />
-    <main class="flex-grow">
+    <div class="flex-grow flex justify-center">
       <slot />
-    </main>
+    </div>
     <BaseFooter />
   </div>
 </template>

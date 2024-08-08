@@ -21,7 +21,14 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.css',
   ],
+
   modules: ['@nuxtjs/google-fonts', '@nuxt/icon'],
+
+  routeRules: {
+    '/': {
+      redirect: '/posts',
+    },
+  },
 
   postcss: {
     plugins: {

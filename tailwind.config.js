@@ -11,6 +11,7 @@ export default {
   theme: {
     extend: {
       screens: {
+        xxs: '375px',
         mlg: '1440px',
       },
       colors: {

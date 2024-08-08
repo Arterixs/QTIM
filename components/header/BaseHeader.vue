@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { defineAsyncComponent, ref, watch } from 'vue';
+import { useRoute } from '#app';
 
 import { toggleBodyScroll } from '~/utils/toggleBodyScroll';
 
@@ -7,10 +8,18 @@ import GroupButtons from '~/components/header/components/GroupButtons.vue';
 import Title from '~/components/header/components/Title.vue';
 import BaseButton from '~/components/UI/BaseButton.vue';
 
+const route = useRoute();
+
 const isOpenMenu = ref(false);
 
 watch(isOpenMenu, (isOpen) => {
   toggleBodyScroll(isOpen);
+});
+
+watch(() => route.name, () => {
+  if (isOpenMenu.value) {
+    isOpenMenu.value = false;
+  }
 });
 
 const lazyMobileMenu = defineAsyncComponent(() => import('~/components/header/components/MobileMenu.vue'));

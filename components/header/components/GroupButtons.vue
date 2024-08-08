@@ -18,12 +18,28 @@ const props = withDefaults(defineProps<GroupButtonsProps>(), {
       'flex-col gap-y-10': props.isMobile
     }"
   >
-    <nav
-      class="flex gap-x-14 text-xl font-normal"
-      :class="props.isMobile && 'flex-col gap-y-5'"
-    >
-      <a>Works</a>
-      <a>About</a>
+    <nav>
+      <ul
+        class="flex gap-x-14 text-xl font-normal"
+        :class="props.isMobile && 'flex-col gap-y-5'"
+      >
+        <li class="transition hover:text-gray-qtim">
+          <NuxtLink
+            to="/works"
+            active-class="text-blue-qtim"
+          >
+            Works
+          </NuxtLink>
+        </li>
+        <li class="transition hover:text-gray-qtim">
+          <NuxtLink
+            to="/about"
+            active-class="text-blue-qtim"
+          >
+            About
+          </NuxtLink>
+        </li>
+      </ul>
     </nav>
     <div
       class="flex"
