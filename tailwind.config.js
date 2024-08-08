@@ -21,6 +21,7 @@ export default {
         },
         gray: {
           qtim: '#868686',
+          'qtim-hover': '#E8E8E8',
           'qtim-light': '#F3F3F3',
         },
         green: {

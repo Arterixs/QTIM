@@ -1,14 +1,14 @@
 <script setup lang="ts">
 interface BaseButtonProps {
-  text?: string
+  text?: string | number
   styleBtn?: string,
   hover?: string
 }
 
 const props = withDefaults(defineProps<BaseButtonProps>(), {
   text: 'btn',
-  styleBtn: 'p-2 bg-black text-white',
-  hover: 'hover:bg-gray-qtim',
+  styleBtn: 'p-2 bg-black-qtim text-white',
+  hover: 'hover:bg-gray-qtim hover:transition',
 });
 
 </script>
