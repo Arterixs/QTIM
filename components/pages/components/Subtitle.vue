@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface SubtitleProps {
-  title: string
+  title?: string | null
 }
 
 const props = defineProps<SubtitleProps>();
@@ -8,6 +8,6 @@ const props = defineProps<SubtitleProps>();
 
 <template>
   <h2 class="text-4xl sm:text-[84px] sm:leading-[84px]">
-    {{ props.title }}
+    {{ props.title ?? '' }}
   </h2>
 </template>

@@ -1,11 +1,17 @@
 <script setup lang="ts">
 
+interface PostProps {
+  image?: string | null,
+  description?: string | null
+}
+
+const props = defineProps<PostProps>();
 </script>
 
 <template>
   <section class="flex flex-col gap-y-10 sm:gap-y-20">
     <img
-      src=""
+      :src="props.image ?? ''"
       alt="image"
       width="1216"
       height="700"
@@ -16,9 +22,7 @@
         About
       </h3>
       <p class="text-2xl md:text-4xl">
-        The business model of this service is an aggregator that brings together commercial and noncommercial organizations and charges
-        a commission for transactions. The percentage that goes to the account of the platform owner is discussed individually with each company.
-        The platform also has a subscription system. It allows nonprofits to post more than one project for which they collect donations.
+        {{ props.description ?? 'Текст не найден' }}
       </p>
     </div>
   </section>

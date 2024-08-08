@@ -13,3 +13,7 @@ export interface Post {
 export const getPosts = () => useCustomFetch<Post[]>('/qtim-test-work/posts', {
   lazy: true,
 });
+
+export const getPost = (postId: number) => useCustomFetch<Post>(`/qtim-test-work/posts/${postId}`, {
+  lazy: true,
+});
