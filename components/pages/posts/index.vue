@@ -1,5 +1,13 @@
 <script setup lang="ts">
+import { type Post } from '~/services/getPosts';
+
 import Card from '~/components/pages/posts/components/Card.vue';
+
+interface PostsProps {
+  currentPosts: Post[]
+}
+
+const props = defineProps<PostsProps>();
 </script>
 
 <template>
@@ -9,8 +17,11 @@ import Card from '~/components/pages/posts/components/Card.vue';
       lg:grid-cols-[repeat(3,_minmax(280px,_500px))] mlg:grid-cols-4"
     >
       <Card
-        v-for="card of 10"
-        :key="card"
+        v-for="post of props.currentPosts"
+        :id="post.id"
+        :key="post.id"
+        :description="post.description"
+        :image="post.image"
       />
     </div>
   </div>

@@ -24,6 +24,12 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/google-fonts', '@nuxt/icon'],
 
+  runtimeConfig: {
+    public: {
+      apiBase: process.env.API_HOST,
+    },
+  },
+
   routeRules: {
     '/': {
       redirect: '/posts',
