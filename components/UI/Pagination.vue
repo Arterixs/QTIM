@@ -3,7 +3,7 @@ import { watch } from 'vue';
 
 import { usePagination } from '~/composables/usePagination';
 
-import BaseButton from '~/components/UI/BaseButton.vue';
+import BaseButton from '~/components/ui/BaseButton.vue';
 
 interface PaginationProps {
   amountPages: number,

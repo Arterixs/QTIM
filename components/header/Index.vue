@@ -6,7 +6,7 @@ import { toggleBodyScroll } from '~/utils/toggleBodyScroll';
 
 import GroupButtons from '~/components/header/components/GroupButtons.vue';
 import Title from '~/components/header/components/Title.vue';
-import BaseButton from '~/components/UI/BaseButton.vue';
+import BaseButton from '~/components/ui/BaseButton.vue';
 
 const route = useRoute();
 

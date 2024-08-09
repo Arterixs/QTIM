@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ImageBlock from '~/components/ui/ImageBlock.vue';
 
 interface PostProps {
   image?: string | null,
@@ -6,17 +7,17 @@ interface PostProps {
 }
 
 const props = defineProps<PostProps>();
+
 </script>
 
 <template>
   <section class="flex flex-col gap-y-10 sm:gap-y-20">
-    <img
-      :src="props.image ?? ''"
-      alt="image"
+    <ImageBlock
+      :image="props.image"
       width="1216"
       height="700"
-      class="bg-orange-500"
-    >
+      style-img="w-full"
+    />
     <div class="flex flex-col gap-y-8 w-full max-w-[695px]">
       <h3 class="text-base">
         About

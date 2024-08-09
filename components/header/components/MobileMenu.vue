@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import GroupButtons from '~/components/header/components/GroupButtons.vue';
-import BaseButton from '~/components/UI/BaseButton.vue';
-import Logo from '~/components/UI/Logo.vue';
+import BaseButton from '~/components/ui/BaseButton.vue';
+import Logo from '~/components/ui/Logo.vue';
 
 const emit = defineEmits<{
   (event: 'closeMenu'): void

@@ -9,10 +9,10 @@ import { AMOUNT_ARTICLES_ON_PAGE } from '~/components/pages/posts/constants';
 
 import Subtitle from '~/components/pages/components/Subtitle.vue';
 import WrapperMain from '~/components/pages/components/WrapperMain.vue';
-import PostsContent from '~/components/pages/posts/index.vue';
-import Error from '~/components/UI/Error.vue';
-import Loader from '~/components/UI/Loader.vue';
-import Pagination from '~/components/UI/Pagination.vue';
+import PostsContent from '~/components/pages/posts/Index.vue';
+import Error from '~/components/ui/Error.vue';
+import Loader from '~/components/ui/Loader.vue';
+import Pagination from '~/components/ui/Pagination.vue';
 
 const { data, error, status } = getPosts();
 

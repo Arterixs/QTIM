@@ -4,7 +4,7 @@ import { firstListContacts, secondListContacts } from '~/components/footer/data/
 import AddressList from '~/components/footer/components/AddressList.vue';
 import ContactsList from '~/components/footer/components/ContactsList.vue';
 import Subtitle from '~/components/footer/components/Subtitle.vue';
-import BaseButton from '~/components/UI/BaseButton.vue';
+import BaseButton from '~/components/ui/BaseButton.vue';
 
 </script>
 

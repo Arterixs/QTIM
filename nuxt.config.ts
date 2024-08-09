@@ -1,6 +1,8 @@
 export default defineNuxtConfig({
   app: {
     head: {
+      charset: 'utf-8',
+      title: 'QTIM',
       htmlAttrs: {
         lang: 'en',
       },
@@ -8,8 +10,8 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],
       link: [
-        { rel: 'apple-touch-icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'apple-touch-icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       ],
     },
   },

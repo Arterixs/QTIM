@@ -1,5 +1,21 @@
+<script setup lang="ts">
+
+interface LoaderProps {
+  additionalStyle?: string,
+  height?: string
+}
+
+const props = withDefaults(defineProps<LoaderProps>(), {
+  additionalStyle: '',
+  height: 'h-[50vh]',
+});
+</script>
+
 <template>
-  <div class="flex justify-center items-center w-full h-[50vh] z-20">
+  <div
+    class="flex justify-center items-center w-full z-20"
+    :class="[props.additionalStyle, props.height]"
+  >
     <div class="preloader" />
   </div>
 </template>
