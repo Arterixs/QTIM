@@ -2,7 +2,7 @@ import { type Post } from '~/services/getPosts';
 
 import { AMOUNT_ARTICLES_ON_PAGE } from '~/components/pages/posts/constants';
 
-export const createPaginateData = (posts: Post[]) => {
+export const getNewPaginateData = (posts: Post[]) => {
   const parent = [];
   let children: Post[] = [];
 

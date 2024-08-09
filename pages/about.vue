@@ -5,8 +5,11 @@ import WrapperMain from '~/components/pages/components/WrapperMain.vue';
 
 <template>
   <WrapperMain>
-    <section class="w-full">
+    <section class="w-full flex flex-col max-md:items-center gap-y-10">
       <Subtitle title="About" />
+      <p class="text-4xl">
+        Page is under construction
+      </p>
     </section>
   </WrapperMain>
 </template>

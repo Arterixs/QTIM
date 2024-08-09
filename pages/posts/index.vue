@@ -3,7 +3,7 @@ import { computed, ref, watchEffect } from 'vue';
 
 import { getPosts } from '~/services/getPosts';
 
-import { createPaginateData } from '~/components/pages/posts/helpers/createPaginateData';
+import { getNewPaginateData } from '~/components/pages/posts/helpers/getNewPaginateData';
 
 import { AMOUNT_ARTICLES_ON_PAGE } from '~/components/pages/posts/constants';
 
@@ -30,11 +30,15 @@ const collectionOfPosts = computed(() => {
     return [];
   }
 
-  return createPaginateData(data.value);
+  return getNewPaginateData(data.value);
 });
 
 const currentSetOfPosts = computed(() => {
   if (!collectionOfPosts.value) {
+    return [];
+  }
+
+  if (collectionOfPosts.value.length < currentIndexPosts.value) {
     return [];
   }
 

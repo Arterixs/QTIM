@@ -47,7 +47,7 @@ watch(currentPage, (page) => {
       v-for="number of buttonsInfo"
       :key="number"
       :text="number"
-      :style-btn="`size-11 rounded-xl text-base disabled:cursor-not-allowed ${currentPage === number ? 'bg-black-qtim text-white' : 'bg-gray-qtim-light'}`"
+      :style-btn="`size-11 rounded-xl text-base ${currentPage === number ? 'bg-black-qtim text-white' : 'bg-gray-qtim-light'} disabled:cursor-not-allowed`"
       :is-disabled="currentPage === number"
       hover="hover:bg-gray-qtim-hover hover:transition"
       @click="handleClickBtn(number)"
