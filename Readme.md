@@ -2,6 +2,8 @@
 
 ## О проекте
 
+![image](https://github.com/user-attachments/assets/185b3b70-d1c0-42c3-93f0-9d76492c74f9)
+
 Тестовое задание для компании QTIM
 
 ### Технологии
